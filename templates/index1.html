@@ -56,7 +56,7 @@
       outline: 0;
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
     }
-    .btn-primary {
+    .btn-success {
       background-color: var(--dark-color); /* Dark color button */
       border-color: var(--dark-color);
       color: white;
@@ -67,13 +67,14 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
       transition: all 0.2s ease-in-out;
     }
-    .btn-primary:hover {
-      background-color: #10282c; /* Slightly lighter on hover */
-      border-color: #10282c;
+    .btn-success:hover {
+      background-color: var(--light-color); /* Slightly lighter on hover */
+      border-color: var(--light-color);
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      color: #10282c;
     }
-    .btn-primary:focus, .btn-primary.focus {
-      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    .btn-success:focus, .btn-success.focus {
+      box-shadow: 0 0 0 0.6rem rgba(0, 123, 255, 0.5);
     }
     .img-container {
       text-align: center;
@@ -98,13 +99,40 @@
     .prediction-results h2, .prediction-results p {
       margin-bottom: 10px;
     }
+
+    .instruction {
+      background-color: #e9ecef; /* Very light gray background */
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-size: 1.1em;  /* Slightly larger font */
+      color: #343a40; /* Dark gray text color */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      line-height: 1.6; /* Improve readability */
+    }
+    
+    .instruction p { /* Style individual paragraphs within the instruction */
+      margin-bottom: 10px; /* Space between paragraphs */
+    }
+    
+    .instruction strong { /* Style any emphasized text */
+      font-weight: bold;
+      color: var(--dark-color); /* Use your dark color from the palette */
+    }
+
   </style>
 </head>
 <body>
 
 <div class="container">
   <div class="jumbotron">
-    <h1>Image Classification</h1>
+    <h1>X-ray Image Classification</h1>
+  </div>
+
+  <div class="instruction">
+    <p>Detect potential signs of <b>COVID-19</b>, <b>Pneumonia</b>, or <b>Tuberculosis</b> in your X-ray image.</p>
+    <p>Upload your image using the form below for analysis.</p> 
   </div>
 
   <div class="form-container"> 
