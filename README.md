@@ -1,4 +1,4 @@
-# X-Ray Image Classification Web Application
+# 🩻 X-Ray Image Classification Web Application
 
 This web application allows users to upload X-ray images and classify them into one of the following categories:
 
