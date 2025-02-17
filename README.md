@@ -57,9 +57,6 @@ This web application allows users to upload X-ray images and classify them into 
 └── README.md
 ```
 
-## License
-This project is licensed under the MIT License.
-
 ## Acknowledgments
 - Medical image datasets for training
 - TensorFlow and Flask communities for their support
