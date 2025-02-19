@@ -59,8 +59,6 @@ python app.py
 ### **4️⃣ Access the Web App**  
 Copy the local server address displayed in the terminal (e.g., `http://127.0.0.1:5000/`) and paste it into your browser. You can now upload X-ray images for classification.  
 
-![Demo](test.gif)
-
 ![Demo](test-speed.gif)
 ---
 
