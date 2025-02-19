@@ -9,7 +9,7 @@ This web application allows users to upload X-ray images and classify them into 
 
 ## Features
 - User-friendly interface for uploading X-ray images
-- Automated classification using a trained deep learning model
+- Automated classification using a trained deep-learning model
 - Quick and reliable results for medical screening
 
 ## Requirements
@@ -17,7 +17,7 @@ This web application allows users to upload X-ray images and classify them into 
 - Jupyter Notebook
 - Flask
 - TensorFlow
-- Other dependencies listed in `requirements.txt`
+- Other dependencies will be automatically installed 
 
 ## How to Use the Web Application
 
