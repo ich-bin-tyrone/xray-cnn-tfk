@@ -1,60 +1,82 @@
-# 🩻 X-Ray Image Classification Web Application
+# 🩻 X-Ray Image Classification Web Application  
 
-This web application allows users to upload X-ray images and classify them into one of the following categories:
+This web application allows users to upload X-ray images and classify them into one of the following categories:  
 
 - **COVID-19**  
 - **Pneumonia**  
 - **Tuberculosis**  
-- **Normal**
+- **Normal**  
 
-## Features
-- User-friendly interface for uploading X-ray images
-- Automated classification using a trained deep-learning model
-- Quick and reliable results for medical screening
+## 🚀 Features  
+✅ **User-friendly interface** for uploading X-ray images  
+✅ **Automated classification** using a trained deep-learning model  
+✅ **Quick and reliable results** for medical screening  
 
-## Requirements
-- Python 3.x
-- Jupyter Notebook
-- Flask
-- TensorFlow
-- Other dependencies will be automatically installed 
+## 📦 Requirements  
+Ensure you have the following installed:  
 
-## How to Use the Web Application
+- Python **3.x**  
+- Jupyter Notebook  
+- Flask  
+- TensorFlow  
+- Other dependencies (will be installed automatically)  
 
-1. **Download the Repository**  
-   Clone or download the entire repository to your local machine.
-
-   ```bash
-   git clone <repository_link>
-   cd <repository_directory>
-   ```
-
-2. **Run the Model Notebook**  
-   Open and run `model.ipynb` using Jupyter Notebook or any IDE of your choice. This will train the model and create an `.h5` file (the trained model) that will be saved in your local Desktop directory.
-
-   ```bash
-   jupyter notebook model.ipynb
-   ```
-
-3. **Run the Web Application**  
-   After the `.h5` file is created:
-
-   ```bash
-   python app.py
-   ```
-
-4. **Access the Web App**  
-   Copy the local server address displayed in the terminal (e.g., `http://127.0.0.1:5000/`) and paste it into your browser. The web application will load, and you can start uploading X-ray images for classification.
-
-## Folder Structure
+You can install all required packages using:  
+```bash
+pip install -r requirements.txt
 ```
-├── app.py
-├── model.ipynb
-├── static/
-├── templates/
-├── requirements.txt
-└── README.md
+
+## 🔧 How to Use the Web Application  
+
+### **1️⃣ Download the Repository**  
+Clone or download the repository to your local machine:  
+```bash
+git clone <repository_link>
+cd <repository_directory>
+```
+
+### **2️⃣ Train the Model**  
+Run `model.ipynb` using Jupyter Notebook or any IDE of your choice to train the model. This will create an `.h5` file (the trained model), which will be saved in your local **Desktop directory**.  
+
+#### **Adjustable Training Parameters:**  
+- `SIZE`: Number of training samples (**default = 2000**)  
+- `batch_size`: Number of images per batch (**default = 8**)  
+- `epochs`: Number of training iterations (**default = 100**)  
+
+For a **quick test**, use:  
+```python
+SIZE = 256
+batch_size = 8
+epochs = 10
+```
+
+Run the notebook:  
+```bash
+jupyter notebook model.ipynb
+```
+
+### **3️⃣ Start the Web Application**  
+After training is complete and the `.h5` model file is saved, run:  
+```bash
+python app.py
+```
+
+### **4️⃣ Access the Web App**  
+Copy the local server address displayed in the terminal (e.g., `http://127.0.0.1:5000/`) and paste it into your browser. You can now upload X-ray images for classification.  
+
+---
+
+## 📂 Folder Structure  
+```
+├── app.py                  # Flask application  
+├── model.ipynb             # Model training notebook  
+├── static/                 # Static files (e.g., CSS, images)  
+├── templates/              # HTML templates  
+├── requirements.txt        # Dependencies  
+└── README.md               # Project documentation  
 ```
 
 ---
-Feel free to contribute to this project by submitting issues or pull requests!
+
+## 💡 Contributing  
+Feel free to contribute by submitting **issues** or **pull requests**! 😊  
