@@ -51,7 +51,7 @@ jupyter notebook model.ipynb
 ```
 
 ### **3️⃣ Start the Web Application**  
-After training is complete and the `.h5` model file is saved, run:  
+After training is complete and the `.h5` model file is saved on your Desktop, run:  
 ```bash
 python app.py
 ```
