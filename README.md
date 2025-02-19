@@ -21,11 +21,6 @@ Ensure you have the following installed:
 - TensorFlow  
 - Other dependencies (will be installed automatically)  
 
-You can install all required packages using:  
-```bash
-pip install -r requirements.txt
-```
-
 ## 🔧 How to Use the Web Application  
 
 ### **1️⃣ Download the Repository**  
