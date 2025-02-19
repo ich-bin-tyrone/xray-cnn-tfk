@@ -30,7 +30,7 @@ This web application allows users to upload X-ray images and classify them into 
    ```
 
 2. **Run the Model Notebook**  
-   Open and run `model.ipynb` using Jupyter Notebook. This will train the model and create an `.h5` file (the trained model) saved in your local directory.
+   Open and run `model.ipynb` using Jupyter Notebook or any IDE of your choice. This will train the model and create an `.h5` file (the trained model) that will be saved in your local Desktop directory.
 
    ```bash
    jupyter notebook model.ipynb
@@ -50,16 +50,11 @@ This web application allows users to upload X-ray images and classify them into 
 ```
 ├── app.py
 ├── model.ipynb
-├── model.h5
 ├── static/
 ├── templates/
 ├── requirements.txt
 └── README.md
 ```
-
-## Acknowledgments
-- Medical image datasets for training
-- TensorFlow and Flask communities for their support
 
 ---
 Feel free to contribute to this project by submitting issues or pull requests!
