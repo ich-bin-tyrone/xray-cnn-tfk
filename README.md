@@ -19,7 +19,7 @@ Ensure you have the following installed:
 - Jupyter Notebook  
 - Flask  
 - TensorFlow  
-- Other dependencies (will be installed automatically)  
+- Other dependencies (will be installed automatically upon running `model.ipynb`)  
 
 ## 🔧 How to Use the Web Application  
 
